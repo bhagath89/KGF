@@ -142,10 +142,10 @@ def list_chatbot_chats(update: Update, context: CallbackContext):
 
 
 __help__ = f"""
-Heya am ZAIRA a powerful group manager by KID OF TELEGRAM. .
- JOIN [@TZKID](https://t.me/tzkid) For my support 
+Heya am KGF a powerful group manager by ZEUS OF TG. .
+ JOIN [NOOBIEZ HUB](https://t.me/NOOBIEZHUB) For my support 
 Join our friendship group @{SUPPORT_CHAT}
-[MY UPDTAES GOES AT KID BOTS](https://t.me/KIDBOTS) 
+[MY UPDTAES](https://t.me/ZABOTZ) 
 """
 
 ADD_CHAT_HANDLER = CommandHandler("addchat", add_chat)
@@ -165,7 +165,7 @@ dispatcher.add_handler(REMOVE_CHAT_HANDLER)
 dispatcher.add_handler(CHATBOT_HANDLER)
 dispatcher.add_handler(LIST_CB_CHATS_HANDLER)
 
-__mod_name__ = "ZAIRA"
+__mod_name__ = "KGF"
 __command_list__ = ["addchat", "rmchat", "listaichats"]
 __handlers__ = [
     ADD_CHAT_HANDLER,
