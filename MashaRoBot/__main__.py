@@ -74,14 +74,14 @@ def get_readable_time(seconds: int) -> str:
 
 
 PM_START_TEXT = """
-ʜᴇʟʟᴏ [🤗](https://telegra.ph/file/33afc4921ffae87bfc2a9.jpg), ɪᴍ ᴢᴀɪʀᴀ ᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.
+ʜᴇʟʟᴏ [🤗](https://telegra.ph/file/e387606768e113e61d8e3.jpg), ɪᴍ ᴋɢꜰ ᴀ ʜɪɢʜʏ ᴀᴅᴠᴀɴᴄᴇᴅ ʙᴏᴛ ᴡɪᴛʜ ʟᴏᴛꜱ ᴏꜰ ᴀᴍᴀᴢɪɴɢ ᴛᴏᴏʟꜱ.
 `ɪ'ᴍ ʜᴇʀᴇ ᴛᴏ ʜᴇʟᴘ ʏᴏᴜ ᴍᴀɴᴀɢᴇ ʏᴏᴜʀ ɢʀᴏᴜᴘꜱ! ʜɪᴛ ʜᴇʟᴘ ꜰᴏʀ ᴍᴏʀᴇ`
 """
 
 buttons = [
     [
         InlineKeyboardButton(
-            text="➕️ ADD ZAIRA TO GROUP ➕️", url="t.me/ZairaRobot?startgroup=true"),
+            text="➕️ ADD KGF TO GROUP ➕️", url="t.me/KGF_robot?startgroup=true"),
     ],
     [
         InlineKeyboardButton(text="ABOUT", callback_data="masha_"),
@@ -91,19 +91,19 @@ buttons = [
         InlineKeyboardButton(
             text="UPDATES", callback_data="source_"),
         InlineKeyboardButton(
-            text="SUPPORT", url="https://t.me/tzkid"
+            text="SUPPORT", url="https://t.me/noobiezhub"
         ),
     ],
 ]
 
 
 HELP_STRINGS = """
-`ʜɪ.. ɪ'ᴍ` [ZAIRA](https://telegra.ph/file/33afc4921ffae87bfc2a9.jpg) 
+`ʜɪ.. ɪ'ᴍ` [ᴋɢꜰ](https://telegra.ph/file/e387606768e113e61d8e3.jpg) 
 `ᴄʟɪᴄᴋ ᴏɴ ᴛʜᴇ ʙᴜᴛᴛᴏɴꜱ ʙᴇʟᴏᴡ ᴛᴏ ɢᴇᴛ ᴅᴏᴄᴜᴍᴇɴᴛᴀᴛɪᴏɴ ᴀʙᴏᴜᴛ ꜱᴘᴇᴄɪꜰɪᴄ ᴍᴏᴅᴜʟᴇꜱ..`"""
 
-MASHA_IMG = "https://telegra.ph/file/33afc4921ffae87bfc2a9.jpg"
+MASHA_IMG = "https://telegra.ph/file/e387606768e113e61d8e3.jpg"
 
-DONATE_STRING = """[HEY GLAD TO THINK TO DONATE CONTACT ME AT TZKID](https://t.me/TZKID) """
+DONATE_STRING = """[HEY GLAD TO THINK TO DONATE CONTACT ME AT ZEUS](https://t.me/itzmezeus) """
 
 IMPORTED = {}
 MIGRATEABLE = []
@@ -348,7 +348,7 @@ def Masha_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "masha_":
         query.message.edit_text(
-            text=""" ℹ️ I'm *ZAIRA*, a powerful group management bot built to help you manage your group easily.
+            text=""" ℹ️ I'm *KGF*, a powerful group management bot built to help you manage your group easily.
                  ❍ I can restrict users.
                  ❍ I can greet users with customizable welcome messages and even set a group's rules.
                  ❍ I have an advanced anti-flood system.
@@ -356,8 +356,8 @@ def Masha_about_callback(update: Update, context: CallbackContext):
                  ❍ I have a note keeping system, blacklists, and even predetermined replies on certain keywords.
                  ❍ I check for admins' permissions before executing any command and more stuffs
                  \n_Zaira's licensed under the GNU General Public License v3.0_
-                 Here is the [ZAIRA SUPPORT](https://t.me/tzkid).
-                 If you have any question about Zaira, let us know at @tzkid.""",
+                 Here is the [SUPPORT](https://t.me/noobiezhub).
+                 If you have any question about KGF, let us know at @noobiezhub.""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=True,
             reply_markup=InlineKeyboardMarkup(
@@ -383,8 +383,8 @@ def Source_about_callback(update: Update, context: CallbackContext):
     query = update.callback_query
     if query.data == "source_":
         query.message.edit_text(
-            text=""" Hi..🤗 I'm *ZAIRA*
-                 \nHere is My [UPDATES](https://t.me/kidbots) .""",
+            text=""" Hi..🤗 I'm *KGF*
+                 \nHere is My [UPDATES](https://t.me/ZABOTZ) .""",
             parse_mode=ParseMode.MARKDOWN,
             disable_web_page_preview=False,
             reply_markup=InlineKeyboardMarkup(
